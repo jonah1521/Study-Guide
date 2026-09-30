@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>StudyBuddy</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">StudyBuddy</div>
+    <div class="tagline">Turn your notes into a study session.</div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Your Personal Study Guide</h1>
+
+      <p>
+        Paste your class notes below. StudyBuddy will organize them
+        into topics, key points, flashcards, and a practice quiz.
+      </p>
+    </section>
+
+
+    <section class="card">
+
+      <label for="notes">Your Notes</label>
+
+      <textarea
+        id="notes"
+        placeholder="Paste your class notes here...
+
+Example:
+Photosynthesis occurs in chloroplasts. Plants use sunlight,
+carbon dioxide, and water to make glucose and oxygen."
+      ></textarea>
+
+      <button id="generateBtn">
+        Create Study Guide
+      </button>
+
+    </section>
+
+
+    <div id="emptyState" class="empty">
+      Your study guide will appear here.
+    </div>
+
+
+    <section id="results" class="results hidden">
+
+      <!-- STUDY GUIDE -->
+
+      <div class="card">
+
+        <h2>📚 Study Guide</h2>
+
+        <div id="guide"></div>
+
+      </div>
+
+
+      <!-- FLASHCARDS -->
+
+      <div class="card">
+
+        <h2>🧠 Flashcards</h2>
+
+        <div id="flashcards"></div>
+
+      </div>
+
+
+      <!-- QUIZ -->
+
+      <div class="card">
+
+        <div class="quiz-header">
+
+          <h2>❓ Practice Quiz</h2>
+
+          <button id="newQuizBtn" class="secondary">
+            New Quiz
+          </button>
+
+        </div>
+
+        <div id="quiz"></div>
+
+        <button id="submitQuizBtn">
+          Check Answers
+        </button>
+
+        <div id="score"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    StudyBuddy — first prototype
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
